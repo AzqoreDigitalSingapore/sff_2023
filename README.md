@@ -1,3 +1,11 @@
+# CICD Status
+
+Detect any push to main branch, build and push to gh-page branch with copy of index.html to 404.html
+[![Build and Deploy](https://github.com/AzqoreDigitalSingapore/sff_2023/actions/workflows/main.yml/badge.svg)](https://github.com/AzqoreDigitalSingapore/sff_2023/actions/workflows/main.yml)
+
+Detect and push to gh-page branch, build and deploy to Github Pages
+[![pages-build-deployment](https://github.com/AzqoreDigitalSingapore/sff_2023/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/AzqoreDigitalSingapore/sff_2023/actions/workflows/pages/pages-build-deployment)
+
 # Deployment Instructions
 
 ng build --output-path docs  --base-href /sff_2023/ 
