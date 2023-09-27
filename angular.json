@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/sff_2023/",
             "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -33,6 +34,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/sff_2023/",
               "budgets": [
                 {
                   "type": "initial",
@@ -48,6 +50,7 @@
               "outputHashing": "all"
             },
             "development": {
+              "baseHref": "/sff_2023/",
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
