@@ -13,7 +13,7 @@ cp /docs/index.html /docs/404.html
 
 # Website
 
-https://dannellim.github.io/sff_2023/
+[https://azqoredigitalsingapore.github.io/sff_2023/]
 
 # Sff2023
 
