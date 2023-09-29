@@ -14,7 +14,7 @@ export class QrcodeComponent {
     this.getUrl();
   }
   getUrl(): void {
-    this.myAngularxQrCode = String(Constants.PROD_URL);
+    this.myAngularxQrCode = String(this.route.snapshot.paramMap.get('url'));
     console.log(this.myAngularxQrCode);
   }
   share(): void {
