@@ -46,5 +46,37 @@
       "linkedIn": "https://www.linkedin.com/in/dannel-lim-8a573b217/",
       "jobTitle": "Full Stack Developer",
       "company": "Azqore SA"
+    },
+    {
+      "id": 7,
+      "name": "Anton Soudovtsev",
+      "image": "https://media.licdn.com/dms/image/D4E03AQGhxYvv1vORag/profile-displayphoto-shrink_200_200/0/1669410720047?e=1703721600&v=beta&t=0zeLSJYCA6G9YuioNKD03u0Pdu1aiIvRWMdcexvA_T0",
+      "linkedIn": "https://ch.linkedin.com/in/anton-soudovtsev-64b4891",
+      "jobTitle": "Head of Azqore Business Services",
+      "company": "Azqore SA"
+    },
+    {
+      "id": 8,
+      "name": "Walter Zhang, CFA, CAIA",
+      "image": "https://static.licdn.com/aero-v1/sc/h/9c8pery4andzj6ohjkjp54ma2",
+      "linkedIn": "https://sg.linkedin.com/in/walter-zhang-cfa-caia-528a6527?trk=people-guest_people_search-card",
+      "jobTitle": "Director - Senior Private Equity Investor Relations (Asset Management Asia)",
+      "company": "Indosuez Wealth Management"
+    },
+    {
+      "id": 9,
+      "name": "Lucas Bouziat",
+      "image": "https://media.licdn.com/dms/image/D5603AQEf3HdGCP5-Ag/profile-displayphoto-shrink_200_200/0/1686705494202?e=1703721600&v=beta&t=nqHNdNyq3uWi7ppxHmUp7y2tx0kX8YjgjQKOO-iFq8o",
+      "linkedIn": "https://sg.linkedin.com/in/lucas-bouziat-5964423b",
+      "jobTitle": "Appointed Representative Business Development Asia",
+      "company": "Amundi"
+    },
+    {
+      "id": 10,
+      "name": "Arnaud Misset",
+      "image": "https://media.licdn.com/dms/image/C5603AQEPtDNBYFt4Zg/profile-displayphoto-shrink_200_200/0/1516287418075?e=1703721600&v=beta&t=NgcSbMPxNFDZMG97TTLf3SHvnvhgoa6jTVNcLGkxPaw",
+      "linkedIn": "https://fr.linkedin.com/in/arnaud-misset-4978992",
+      "jobTitle": "Chief Digital Officer - Member of CACEIS group Executive Committee",
+      "company": "CACEIS"
     }
   ]
