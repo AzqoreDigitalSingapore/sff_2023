@@ -30,7 +30,9 @@
             ],
             "scripts": [
               "src/assets/scripts/share.js",
-              "src/assets/scripts/image.js"
+              "src/assets/scripts/image.js",
+              "src/assets/scripts/atcb.js",
+              "src/assets/scripts/calendar.js"
             ]
           },
           "configurations": {
@@ -40,7 +42,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "1.5mb"
                 },
                 {
                   "type": "anyComponentStyle",
