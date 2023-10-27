@@ -1,5 +1,34 @@
 <h2>Global Agenda</h2>
-<br>
+
+<div class="container">
+    <div class="row dropdown">
+        <div class="column dropdown-btn">
+            <select id="entityOption" class="form-select" (change)="onEntityChange($any($event))">
+                <option value="">All entities</option>
+                <option *ngFor="let entity of entities" [value]="entity.id">{{entity.name}}</option>
+            </select>
+        </div>
+        <div class="column dropdown-btn">
+            <select id="dateOption" class="form-select" (change)="onDateChange($any($event))">
+                <option value="">All dates</option>
+                <option *ngFor="let date of datesDropdown"
+                    [value]="date.getDate() + '/' + (date.getMonth() + 1)+ '/' + date.getFullYear()">{{
+                    date.getDate()
+                    + " " +
+                    monthAsString(date.getMonth())
+                    + " " +
+                    date.getFullYear()
+                    }}</option>
+            </select>
+        </div>
+        <div class="column dropdown-btn">
+            <select id="timeOption" class="form-select" (change)="onTimeChange($any($event))">
+                <option value="">All times</option>
+                <option *ngFor="let time of times" [value]="time">{{time}}</option>
+            </select>
+        </div>
+    </div>
+</div>
 <ul class="list-group">
     <li class="list-group-item" *ngFor="let event of events">
         <div>

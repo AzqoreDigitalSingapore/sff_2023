@@ -70,3 +70,41 @@ time.icon span
   padding-top: 0.8em;
   color: #2f2f2f;
 }
+.container {
+  padding: 0;
+}
+.container .dropdown {
+  display:inline-block;
+  vertical-align: middle;
+  float: none;
+}
+.dropdown {
+  margin:0 auto;
+  width: 100%;
+}
+.dropdown .dropdown-btn {
+  display:inline-block;
+  vertical-align: middle;
+  float: none;
+}
+/* Clear floats after the columns */
+.dropdown:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.dropdown-btn {
+  width: 33.33%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 8px;
+}
+.select {
+    position: relative;
+    display: inline-block;
+}
+@media screen and (max-width: 600px) {
+  .dropdown-btn {
+    width: 100%!important;
+  }
+}
