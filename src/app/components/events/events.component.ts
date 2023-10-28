@@ -28,12 +28,6 @@ export class EventsComponent {
   monthAsString(arg0: number) {
     return Helper.monthAsString(arg0);
   }
-  shortDayOfWeekAsString(arg0: number) {
-    return Helper.shortDayOfWeekAsString(arg0);
-  }
-  dayOfWeekAsString(arg0: number) {
-    return Helper.dayOfWeekAsString(arg0);
-  }
   ngOnInit(): void {
     this.loader.setLoading(true);
     this.entityService.getEntities()
@@ -72,9 +66,6 @@ export class EventsComponent {
       times.push(events[i].time)
     }
     this.times = times.filter((date, i, self) => self.findIndex(d => d === date) === i);
-  }
-  register(id: number) {
-    this.router.navigate(['/register', id]);
   }
   onEntityChange(value: any) {
     this.selectedEntity = value.target.value;

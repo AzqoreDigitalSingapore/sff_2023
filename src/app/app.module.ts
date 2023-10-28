@@ -20,6 +20,9 @@ import { QrscannerComponent } from './components/qrscanner/qrscanner.component';
 import { RegisterEventComponent } from './components/register-event/register-event.component';
 import { RegisterSuccessComponent } from './components/register-success/register-success.component';
 import { LocateUsComponent } from './components/locate-us/locate-us.component';
+import { CalendarControlComponent } from './controls/calendar-control/calendar-control.component';
+import { PdpaTextControlComponent } from './controls/pdpa-text-control/pdpa-text-control.component';
+import { AgendalistCardviewComponent } from './controls/agendalist-cardview/agendalist-cardview.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { LocateUsComponent } from './components/locate-us/locate-us.component';
     QrscannerComponent,
     RegisterEventComponent,
     RegisterSuccessComponent,
-    LocateUsComponent
+    LocateUsComponent,
+    CalendarControlComponent,
+    PdpaTextControlComponent,
+    AgendalistCardviewComponent
   ],
   imports: [
     BrowserAnimationsModule,

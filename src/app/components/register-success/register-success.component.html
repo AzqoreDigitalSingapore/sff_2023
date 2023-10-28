@@ -5,11 +5,7 @@
         <hr>
         <div class="row" style="padding-top: 8px;">
             <div class="col-auto" style="padding-right: 0 !important;">
-                <time [dateTime]="dates[events.indexOf(event!)]!" class="icon">
-                    <em>{{dayOfWeekAsString(dates[events.indexOf(event!)].getDay())}}</em>
-                    <strong>{{monthAsString(dates[events.indexOf(event!)].getMonth())}}</strong>
-                    <span>{{dates[events.indexOf(event!)].getDate()}}</span>
-                </time>
+                <app-calendar-control [dateInput]="dates[events.indexOf(event!)]"></app-calendar-control>
             </div>
             <div class="col-auto" style="padding-right: 0 !important;">
                 <strong>{{event?.name}}</strong>
@@ -24,14 +20,4 @@
     <button id="cal-btn" class="btn btn-success">Add to calendar</button>
 </div>
 <br>
-<h2>Locate Us</h2>
-<img id="locationImg" src="assets/images/location_big.png" alt="Location">
-<br><br>
-<img id="boothImg" src="assets/images/booth_big.png" alt="Booth">
-<br><br>
-<!-- The Modal -->
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-</div>
+<app-locate-us></app-locate-us>
