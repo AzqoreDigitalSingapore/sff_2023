@@ -5,7 +5,7 @@
     <h2>{{selectedEvent.name}}</h2>
     <p><b>{{selectedEvent.date}} {{dayOfWeekAsString(eventDate!.getDay())}} {{selectedEvent.time}}</b></p>
     <p>{{selectedEvent.summary}}</p>
-    <p>{{selectedEvent.description}}</p>
+    <p class="event_text" innerHTML="{{selectedEvent.description}}"></p>
     <div class="d-grid gap-2">
         <button class="btn btn-success" type="button" (click)="register()">Register</button>
     </div>
@@ -15,21 +15,7 @@
             <img class="entity-img" src="assets/images/{{entity.image}}" alt="{{entity.image}}">
         </a>
     </div>
-    <div *ngIf="speaker" class="speaker-div">
-        <hr>
-        <p><b>Speaker</b></p>
-        <div class="center_div">
-            <a href={{speaker.linkedIn}} target=”_blank”>
-                <div class="card" style="max-width: 208px;">
-                    <img class="img-thumbnail" src={{speaker.image}} alt={{speaker.name}}>
-                    <div class="card-body">
-                        <h5 class="card-title">{{speaker.name}}</h5>
-                        <label class="card-text">{{speaker.jobTitle}}</label>
-                        <br>
-                        <label class="card-text">{{speaker.company}}</label>
-                    </div>
-                </div>
-            </a>
-        </div>
+    <div *ngIf="eventSpeakers">
+        <app-speaker-control [speakers]="eventSpeakers"></app-speaker-control>
     </div>
 </div>

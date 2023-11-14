@@ -3,6 +3,10 @@ h6 {
     margin-top: 8px;
 }
 
+.event_text {
+  white-space: pre-line;
+}
+
 .speaker {
     display: inline-block;
 }
@@ -23,15 +27,6 @@ h6 {
 
 .entity-img {
   max-width: 80%;
-}
-
-.img-thumbnail {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 16px;
-    border-radius: 50%;
-    height: 152px;
-    width: 152px;
 }
 
 app-calendar-control {

@@ -33,6 +33,7 @@ export class EventsComponent {
     this.entityService.getEntities()
       .subscribe(entities => {
         this.entities = entities;
+        this.entities.sort((a, b) => a.name.localeCompare(b.name));
       });
     this.eventService.getEvents().subscribe(events => {
       this.originalEvents = events;
@@ -66,6 +67,7 @@ export class EventsComponent {
       times.push(events[i].time)
     }
     this.times = times.filter((date, i, self) => self.findIndex(d => d === date) === i);
+    this.times.sort();
   }
   onEntityChange(value: any) {
     this.selectedEntity = value.target.value;
